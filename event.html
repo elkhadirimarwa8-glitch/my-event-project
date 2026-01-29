@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestiges Events | Agence Événementiel</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Prestige<span>Events</span></div>
+        </nav>
+    </header>
+
+    <section class="events-section">
+        <h2>Nos Types d'Événements</h2>
+        <p class="subtitle">Nous créons des moments inoubliables pour vous.</p>
+
+        <div class="cards-container">
+            <div class="card" data-event="Anniversaire">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=500');"></div>
+                <div class="card-content">
+                    <h3>🎂 Anniversaire</h3>
+                    <p>Une fête magique sur mesure pour tous les âges.</p>
+                    <span class="price">À partir de 5000 DH</span>
+                    <button class="btn-book">Réserver</button>
+                </div>
+            </div>
+
+            <div class="card" data-event="Mariage">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=500');"></div>
+                <div class="card-content">
+                    <h3>💍 Mariage</h3>
+                    <p>Le plus beau jour de votre vie, organisé avec soin.</p>
+                    <span class="price">À partir de 15000 DH</span>
+                    <button class="btn-book">Réserver</button>
+                </div>
+            </div>
+
+            <div class="card" data-event="Fête Privée">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=500');"></div>
+                <div class="card-content">
+                    <h3>🎉 Fête Privée</h3>
+                    <p>Soirées exclusives, dîners et célébrations spéciales.</p>
+                    <span class="price">À partir de 8000 DH</span>
+                    <button class="btn-book">Réserver</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle">Réservation</h3>
+            <p>Laissez vos coordonnées pour un devis gratuit.</p>
+            <input type="text" placeholder="Votre Nom">
+            <input type="tel" placeholder="Téléphone">
+            <button class="btn-submit">Envoyer la demande</button>
+        </div>
+    </div>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Prestige<span>Events</span></h4>
+            <p>Expert en organisation d'événements d'exception au Maroc.</p>
+        </div>
+        <div class="footer-section">
+            <h5>Contact</h5>
+            <p>📍 Rue 123  , Casablanca</p>
+            <p>📞 +212 600 000 000</p>
+            <p>📧 contact@prestige-events.ma</p>
+        </div>
+        <div class="footer-section">
+            <h5>Suivez-nous</h5>
+            <div class="socials">
+                <span>Instagram</span> | <span>Facebook</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Prestige Events - Tous droits réservés.
+    </div>
+</footer>
+
+    <!-- Confirmation Alert -->
+    <div id="confirmationAlert" class="confirmation-alert">
+        <div class="alert-content">
+            <span class="alert-icon">✓</span>
+            <h4>Réservation confirmée !</h4>
+            <p>Merci ! Votre demande a été envoyée. Nous vous contacterons bientôt.</p>
+            <button class="alert-close-btn">Fermer</button>
+        </div>
+    </div>
+
+    <script src="event.js"></script>
+</body>
+</html>
